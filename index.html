@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Time Table - CSE Section B (Sem I)</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1b2430;--mute:#5d6b7c;--line:#d9dee5;--lunch:#e9ecf1;
+--ma:#dbe8ff;--phy:#e4f5dc;--ee:#fff1cc;--prog:#e9e0ff;--ai:#ffe1e6;--iks:#d8f3f0;--nss:#eee;--lab:#ffd9b8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12161c;--card:#1b222b;--ink:#e8edf3;--mute:#9aa8b8;--line:#344050;--lunch:#252e39;
+--ma:#24385c;--phy:#27432a;--ee:#4d4020;--prog:#3b2f5e;--ai:#5a2a35;--iks:#1f4743;--nss:#333;--lab:#5c3a1c}}
+:root[data-theme="dark"]{--bg:#12161c;--card:#1b222b;--ink:#e8edf3;--mute:#9aa8b8;--line:#344050;--lunch:#252e39;
+--ma:#24385c;--phy:#27432a;--ee:#4d4020;--prog:#3b2f5e;--ai:#5a2a35;--iks:#1f4743;--nss:#333;--lab:#5c3a1c}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Roboto,Arial,sans-serif;padding:20px 14px}
+.wrap{max-width:1100px;margin:0 auto}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:flex-end;margin-bottom:14px}
+h1{margin:0;font-size:1.5rem;font-weight:700}
+header p{margin:2px 0 0;color:var(--mute);font-size:.9rem}
+.meta{text-align:right;font-size:.85rem;color:var(--mute)}
+.meta b{color:var(--ink)}
+.scroll{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:860px;font-size:.85rem}
+th,td{border:1px solid var(--line);padding:9px 6px;text-align:center;vertical-align:middle}
+thead th{background:var(--lunch);font-weight:600}
+thead th small{display:block;color:var(--mute);font-weight:400;font-size:.72rem}
+th.day{width:56px;font-weight:700}
+td b{display:block;font-size:.9rem}
+td span{color:var(--mute);font-size:.75rem}
+td.lunch{background:var(--lunch);width:44px;padding:0}
+td.lunch div{writing-mode:vertical-rl;transform:rotate(180deg);margin:auto;letter-spacing:.2em;font-weight:600;color:var(--mute)}
+.MA{background:var(--ma)}.PHY{background:var(--phy)}.EE{background:var(--ee)}.PL{background:var(--prog)}
+.AI{background:var(--ai)}.IKS{background:var(--iks)}.NSS,.MEN{background:var(--nss)}.LAB{background:var(--lab)}
+h2{font-size:1.05rem;margin:22px 0 8px}
+.list td,.list th{text-align:left;padding:7px 10px}
+.list table{min-width:640px}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:22px;font-size:.85rem;color:var(--mute)}
+footer b{color:var(--ink);display:block}
+@media print{body{background:#fff;color:#000;padding:0}.scroll{border:0;overflow:visible}table{min-width:0}@page{size:A4 landscape;margin:10mm}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div>
+<h1>I.T.S Engineering College, Greater Noida</h1>
+<p>Department of Applied Science and Humanities · 2026-27 (Odd Semester)</p>
+</div>
+<div class="meta"><b>I-Semester, Section-B (CSE)</b><br>Room No. 218<br>w.e.f. 7th September 2026</div>
+</header>
+
+<div class="scroll"><table>
+<thead><tr>
+<th class="day">Day</th>
+<th>9:10-10:05</th><th>10:05-10:55</th><th>10:55-11:45</th><th>11:45-12:35</th>
+<th>12:35-1:30</th>
+<th>1:30-2:20</th><th>2:20-3:10</th><th>3:10-4:00</th><th>4:00-4:50</th>
+</tr></thead>
+<tbody>
+<tr><th class="day">Mon</th>
+<td class="AI"><b>AI</b><span>ALG</span></td><td class="PHY"><b>PHY</b><span>VS</span></td><td class="IKS"><b>IKS</b><span>PP</span></td><td class="EE"><b>EE</b><span>MS</span></td>
+<td class="lunch" rowspan="5"><div>LUNCH</div></td>
+<td class="PL"><b>Prog. Lang.</b><span>RKY</span></td><td class="PL"><b>Prog. Lang.</b><span>RKY</span></td><td class="MA"><b>MA</b><span>RK</span></td><td class="MA"><b>MA</b><span>RK</span></td></tr>
+<tr><th class="day">Tue</th>
+<td class="NSS"><b>NSS</b><span>AR</span></td><td class="MA"><b>MA</b><span>RK</span></td><td class="PL"><b>Prog. Lang.</b><span>RKY</span></td><td class="EE"><b>EE</b><span>MS</span></td>
+<td class="PHY"><b>PHY</b><span>VS</span></td><td class="LAB" colspan="3"><b>CAED LAB</b><span>OPM / PY</span></td></tr>
+<tr><th class="day">Wed</th>
+<td class="MA"><b>MA</b><span>RK</span></td><td class="MA"><b>MA</b><span>RK</span></td><td class="PHY"><b>PHY</b><span>VS</span></td><td class="AI"><b>AI</b><span>ALG</span></td>
+<td class="EE"><b>EE</b><span>MS</span></td><td class="IKS"><b>IKS</b><span>PP</span></td><td class="LAB" colspan="2"><b>PHY LAB</b><span>VS</span></td></tr>
+<tr><th class="day">Thu</th>
+<td class="MA"><b>MA</b><span>RK</span></td><td class="PL"><b>Prog. Lang.</b><span>RKY</span></td><td class="LAB" colspan="2"><b>EE LAB-B2 (MS) / LL LAB-B1 (AM)</b></td>
+<td class="AI"><b>AI</b><span>ALG</span></td><td class="PHY"><b>PHY</b><span>VS</span></td><td class="EE"><b>EE</b><span>MS</span></td><td class="MEN"><b>Mentor Hr. / Lib.</b></td></tr>
+<tr><th class="day">Fri</th>
+<td class="EE"><b>EE</b><span>MS</span></td><td class="AI"><b>AI</b><span>ALG</span></td><td class="IKS"><b>IKS</b><span>PP</span></td><td class="PHY"><b>PHY</b><span>VS</span></td>
+<td class="PL"><b>Prog. Lang.</b><span>RKY</span></td><td class="MA"><b>MA</b><span>RK</span></td><td class="LAB" colspan="2"><b>EE LAB-B1 (MS) / LL LAB-B2 (AM)</b></td></tr>
+</tbody></table></div>
+
+<h2>Subjects and faculty</h2>
+<div class="scroll list"><table>
+<thead><tr><th>Subject (Abv.)</th><th>Code</th><th>Faculty (Abv.)</th><th>Room</th></tr></thead>
+<tbody>
+<tr><td>Applied Mathematics-I (MA)</td><td>AAS103D</td><td>Mr. Rishi Kumar (RK)</td><td>218</td></tr>
+<tr><td>Applied Physics (PHY)</td><td>AAS101E</td><td>Dr. Vikram Singh (VS)</td><td>218</td></tr>
+<tr><td>Fundamentals of Electrical Engg (EE)</td><td>AEE101A</td><td>Dr. Mohit Saxena (MS)</td><td>218</td></tr>
+<tr><td>Programming Languages</td><td>ACS101</td><td>Mr. Raj Kishor Yadav (RKY)</td><td>218</td></tr>
+<tr><td>AI and Prompt Engineering (AI)</td><td>AAI101</td><td>Ms. Alka Garg (ALG)</td><td>218</td></tr>
+<tr><td>Indian Knowledge System (IKS)</td><td>AAS104</td><td>Dr. Piyus Pathak (PP)</td><td>218</td></tr>
+<tr><td>Applied Physics Lab (PHY Lab)</td><td>AAS151</td><td>Dr. Vikram Singh (VS)</td><td>414/416</td></tr>
+<tr><td>Electrical Engineering Lab (EE Lab)</td><td>AEE151</td><td>Dr. Mohit Saxena (MS)</td><td>323</td></tr>
+<tr><td>Language Lab (LL Lab)</td><td>AAS151</td><td>Ms. Aditi Mishra (AM)</td><td>222</td></tr>
+<tr><td>Computer Aided Engineering Drawing (CAED Lab)</td><td>ACE151</td><td>Mr. O P Maurya (OPM) &amp; Mr. Praveen Yadav (PY)</td><td>315</td></tr>
+<tr><td>NSS</td><td>-</td><td>Mr. Abhishek Rai (AR)</td><td>218</td></tr>
+</tbody></table></div>
+
+<footer>
+<div><b>Dr. P. C. Jha</b>Time Table Co-ordinator</div>
+<div style="text-align:right"><b>Dr. O.P Chaudhary</b>Head, ASH</div>
+</footer>
+</div>
+</body>
+</html>
